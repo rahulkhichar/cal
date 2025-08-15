@@ -8,9 +8,9 @@ import {
   HttpCode,
   HttpStatus,
 } from '@nestjs/common';
-import { AppointmentsService } from '../service/appointments.service';
 import { CreateAppointmentDto } from '../dto/create-appointment.dto';
 import { SearchAvailableSlotsDto } from '../dto/search-available-slots.dto';
+import { AppointmentsService } from '../service/appointments.service';
 
 @Controller('appointments')
 export class AppointmentsController {
@@ -27,7 +27,10 @@ export class AppointmentsController {
     @Param('calendarOwnerId') calendarOwnerId: string,
     @Body() createAppointmentDto: CreateAppointmentDto,
   ) {
-    return await this.appointmentsService.bookAppointment(calendarOwnerId, createAppointmentDto);
+    return await this.appointmentsService.bookAppointment(
+      calendarOwnerId,
+      createAppointmentDto,
+    );
   }
 
   @Get(':id')
@@ -39,4 +42,4 @@ export class AppointmentsController {
   async cancelAppointment(@Param('id') id: string) {
     return await this.appointmentsService.cancelAppointment(id);
   }
-} 
+}
