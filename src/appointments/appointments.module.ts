@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AppointmentsService } from './appointments.service';
-import { AppointmentsController } from './appointments.controller';
+import { AppointmentsService } from './service/appointments.service';
+import { AppointmentsController } from './controller/appointments.controller';
 import { Appointment } from './entities/appointment.entity';
 import { CalendarOwner } from '../calendar-owners/entities/calendar-owner.entity';
 import { AvailabilityRule } from '../availability-rules/entities/availability-rule.entity';

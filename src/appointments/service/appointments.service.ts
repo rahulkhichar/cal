@@ -1,11 +1,11 @@
 import { Injectable, NotFoundException, ConflictException, BadRequestException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, Between } from 'typeorm';
-import { Appointment, AppointmentStatus } from './entities/appointment.entity';
-import { CalendarOwner } from '../calendar-owners/entities/calendar-owner.entity';
-import { AvailabilityRule, DayOfWeek } from '../availability-rules/entities/availability-rule.entity';
-import { CreateAppointmentDto } from './dto/create-appointment.dto';
-import { SearchAvailableSlotsDto } from './dto/search-available-slots.dto';
+import { Appointment, AppointmentStatus } from '../entities/appointment.entity';
+import { CalendarOwner } from '../../calendar-owners/entities/calendar-owner.entity';
+import { AvailabilityRule, DayOfWeek } from '../../availability-rules/entities/availability-rule.entity';
+import { CreateAppointmentDto } from '../dto/create-appointment.dto';
+import { SearchAvailableSlotsDto } from '../dto/search-available-slots.dto';
 
 export interface TimeSlot {
   startTime: string;

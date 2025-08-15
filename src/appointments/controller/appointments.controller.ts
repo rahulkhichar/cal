@@ -8,9 +8,9 @@ import {
   HttpCode,
   HttpStatus,
 } from '@nestjs/common';
-import { AppointmentsService } from './appointments.service';
-import { CreateAppointmentDto } from './dto/create-appointment.dto';
-import { SearchAvailableSlotsDto } from './dto/search-available-slots.dto';
+import { AppointmentsService } from '../service/appointments.service';
+import { CreateAppointmentDto } from '../dto/create-appointment.dto';
+import { SearchAvailableSlotsDto } from '../dto/search-available-slots.dto';
 
 @Controller('appointments')
 export class AppointmentsController {
