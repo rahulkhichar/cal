@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CalendarOwnersService } from './calendar-owners.service';
-import { CalendarOwnersController } from './calendar-owners.controller';
+import { CalendarOwnersController } from './controller/calendar-owners.controller';
 import { CalendarOwner } from './entities/calendar-owner.entity';
+import { CalendarOwnersService } from './service/calendar-owners.service';
 
 @Module({
   imports: [TypeOrmModule.forFeature([CalendarOwner])],

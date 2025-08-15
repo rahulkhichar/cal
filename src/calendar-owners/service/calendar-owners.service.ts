@@ -1,8 +1,8 @@
 import { Injectable, NotFoundException, ConflictException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { CalendarOwner } from './entities/calendar-owner.entity';
-import { CreateCalendarOwnerDto } from './dto/create-calendar-owner.dto';
+import { CalendarOwner } from '../entities/calendar-owner.entity';
+import { CreateCalendarOwnerDto } from '../dto/create-calendar-owner.dto';
 
 @Injectable()
 export class CalendarOwnersService {

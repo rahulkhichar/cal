@@ -7,8 +7,8 @@ import {
   HttpCode,
   HttpStatus,
 } from '@nestjs/common';
-import { CalendarOwnersService } from './calendar-owners.service';
-import { CreateCalendarOwnerDto } from './dto/create-calendar-owner.dto';
+import { CreateCalendarOwnerDto } from '../dto/create-calendar-owner.dto';
+import { CalendarOwnersService } from '../service/calendar-owners.service';
 
 @Controller('calendar-owners')
 export class CalendarOwnersController {
