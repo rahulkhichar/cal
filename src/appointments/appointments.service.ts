@@ -35,7 +35,6 @@ export class AppointmentsService {
       throw new NotFoundException(`Calendar owner with ID ${calendarOwnerId} not found`);
     }
 
-    // Parse the date and get day of week
     const searchDate = new Date(date);
     const dayOfWeek = searchDate.getDay() === 0 ? 7 : searchDate.getDay(); 
 
