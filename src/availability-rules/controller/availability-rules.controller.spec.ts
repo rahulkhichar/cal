@@ -1,10 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { AvailabilityRulesController } from './availability-rules.controller';
-import { AvailabilityRulesService } from './availability-rules.service';
-import { CreateAvailabilityRuleDto } from './dto/create-availability-rule.dto';
-import { UpdateAvailabilityRuleDto } from './dto/update-availability-rule.dto';
-import { AvailabilityRule, DayOfWeek } from './entities/availability-rule.entity';
+import { CreateAvailabilityRuleDto } from '../dto/create-availability-rule.dto';
+import { UpdateAvailabilityRuleDto } from '../dto/update-availability-rule.dto';
+import { AvailabilityRule, DayOfWeek } from '../entities/availability-rule.entity';
 import { HttpStatus } from '@nestjs/common';
+import { AvailabilityRulesController } from './availability-rules.controller';
+import { AvailabilityRulesService } from '../service/availability-rules.service';
 
 describe('AvailabilityRulesController', () => {
   let controller: AvailabilityRulesController;

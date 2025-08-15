@@ -1,9 +1,9 @@
 import { Injectable, NotFoundException, ConflictException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { AvailabilityRule } from './entities/availability-rule.entity';
-import { CreateAvailabilityRuleDto } from './dto/create-availability-rule.dto';
-import { UpdateAvailabilityRuleDto } from './dto/update-availability-rule.dto';
+import { AvailabilityRule } from '../entities/availability-rule.entity';
+import { CreateAvailabilityRuleDto } from '../dto/create-availability-rule.dto';
+import { UpdateAvailabilityRuleDto } from '../dto/update-availability-rule.dto';
 
 @Injectable()
 export class AvailabilityRulesService {

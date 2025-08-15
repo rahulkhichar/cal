@@ -3,9 +3,9 @@ import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { ConflictException, NotFoundException } from '@nestjs/common';
 import { AvailabilityRulesService } from './availability-rules.service';
-import { AvailabilityRule, DayOfWeek } from './entities/availability-rule.entity';
-import { CreateAvailabilityRuleDto } from './dto/create-availability-rule.dto';
-import { UpdateAvailabilityRuleDto } from './dto/update-availability-rule.dto';
+import { AvailabilityRule, DayOfWeek } from '../entities/availability-rule.entity';
+import { CreateAvailabilityRuleDto } from '../dto/create-availability-rule.dto';
+import { UpdateAvailabilityRuleDto } from '../dto/update-availability-rule.dto';
 
 describe('AvailabilityRulesService', () => {
   let service: AvailabilityRulesService;

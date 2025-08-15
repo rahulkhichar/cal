@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AvailabilityRulesService } from './availability-rules.service';
-import { AvailabilityRulesController } from './availability-rules.controller';
+import { AvailabilityRulesController } from './controller/availability-rules.controller';
 import { AvailabilityRule } from './entities/availability-rule.entity';
+import { AvailabilityRulesService } from './service/availability-rules.service';
 
 @Module({
   imports: [TypeOrmModule.forFeature([AvailabilityRule])],

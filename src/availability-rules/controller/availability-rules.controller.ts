@@ -9,9 +9,9 @@ import {
   HttpCode,
   HttpStatus,
 } from '@nestjs/common';
-import { AvailabilityRulesService } from './availability-rules.service';
-import { CreateAvailabilityRuleDto } from './dto/create-availability-rule.dto';
-import { UpdateAvailabilityRuleDto } from './dto/update-availability-rule.dto';
+import { AvailabilityRulesService } from '../service/availability-rules.service';
+import { CreateAvailabilityRuleDto } from '../dto/create-availability-rule.dto';
+import { UpdateAvailabilityRuleDto } from '../dto/update-availability-rule.dto';
 
 @Controller('calendar-owners/:calendarOwnerId/availability-rules')
 export class AvailabilityRulesController {
